@@ -1,0 +1,9 @@
+{
+    "gateway": {
+        "id": "<device id>",
+        "token": "<token id>"
+    },
+    "server": {
+        "auth": "<generated token>"
+    }
+}

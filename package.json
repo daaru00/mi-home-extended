@@ -1,0 +1,33 @@
+{
+  "name": "mi-home-extended",
+  "version": "0.0.1",
+  "description": "Mi Home IoT integrations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "install": "pm start pm2.config.js && pm2 save && pm2 startup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daaru00/mi-home-extended.git"
+  },
+  "keywords": [
+    "mi-home",
+    "iot"
+  ],
+  "engines": {
+    "node": ">=6.6.0"
+  },
+  "author": "daaru00",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daaru00/mi-home-extended/issues"
+  },
+  "homepage": "https://github.com/daaru00/mi-home-extended#readme",
+  "dependencies": {
+    "actions-on-google": "^2.3.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "miio": "^0.15.6"
+  }
+}
