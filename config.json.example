@@ -1,9 +1,17 @@
 {
     "gateway": {
-        "id": "<device id>",
-        "token": "<token id>"
+        "id": "<gateway id>",
+        "token": "<token>"
     },
     "server": {
-        "auth": "<generated token>"
+        "auth": "<generate a new token>"
+    },
+    "googleHome": {
+        "host": "192.168.xxx.xxx",
+        "lang": "en",
+        "phrase": {
+            "getTemperature": "The temperature is $ degree",
+            "getHumidity": "The humidity level is $ percent"
+        }
     }
 }

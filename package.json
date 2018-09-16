@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "install": "pm start pm2.config.js && pm2 save && pm2 startup"
+    "install-system": "pm2 start pm2.config.js && pm2 save && pm2 startup"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "actions-on-google": "^2.3.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "google-home-notifier": "^1.2.0",
     "miio": "^0.15.6"
   }
 }

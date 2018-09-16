@@ -1,5 +1,5 @@
 const miio = require('miio');
-const config = require('../config.json')
+const config = require('./config.json')
 
 class MiHome {
 
@@ -55,6 +55,24 @@ class MiHome {
         devices.on('unavailable', device => {
             console.error('device disconnected:', device)
         });
+    }
+
+    async getTemperature() {
+        if (this.devices.sensor) {
+            let response = await this.devices.sensor.value('temperature')
+            return response.value;
+        }else{
+            return null;
+        }
+    }
+
+    async getHumidity() {
+        if (this.devices.sensor) {
+            let response = await this.devices.sensor.value('humidity')
+            return response.value;
+        }else{
+            return null;
+        }
     }
 
 }
